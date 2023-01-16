@@ -1,0 +1,28 @@
+stratégie : commencer par un coin puis n'importe quel coin == random(premier coin) puis random(autres coins dispo)
+fonction qui ananlyse ce que peut faire le joueur a son prochain coup
+
+Deroulement
+
+1 le joueur joue
+2 l'ia joue : si 1er coup de l'ia: random(coin vide)
+              sinon :
+                    si fonction ananlyse vrai :
+                        bloquer le joueur
+                    sinon si il reste un coin libre:
+                        remplir le coin
+
+si premier tour:
+    si le joueur joue dans un coin:
+        l'ia joue au milieu
+    sinon
+        random(coin vide)
+sinon si 2eme tour:
+    si il y a deux X(joueur) dans la même ligne, colonne ou diagonale et que l'autre case est vide de cette meme l,c ou d:
+        bloquer le joueur
+    sinon:
+        random(coin vide)
+sinon
+    si il y a deux X(joueur) dans la même ligne, colonne ou diagonale et que l'autre case est vide de cette meme l,c ou d:
+        bloquer le joueur
+    sinon:
+        random(case vide)
